@@ -107,10 +107,14 @@ html {
   max-width: 768px;
   margin-right: auto;
   margin-left: auto;
+  box-shadow: black 0 0 25px;
 }
 
 body {
   background-color: #262626;
+  -webkit-text-size-adjust: none;
+  text-shadow: black 0px -1px 0px;
+  background: url(images/body.jpg);
 }
 
 #wrapper {

@@ -110,6 +110,10 @@ html {
   box-shadow: black 0 0 25px;
 }
 
+html {
+  background-color: #262626;
+  background: url(images/body.jpg);
+}
 body {
   background-color: #262626;
   -webkit-text-size-adjust: none;

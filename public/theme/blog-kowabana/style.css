@@ -626,3 +626,11 @@ h1 img {
   background: linear-gradient(top, #303030 0%, #262626 100%);
   /* W3C */
 }
+
+.page_title {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}

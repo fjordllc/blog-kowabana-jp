@@ -108,6 +108,7 @@ html {
   margin-right: auto;
   margin-left: auto;
   box-shadow: black 0 0 25px;
+  -webkit-box-shadow: black 0 0 25px;
 }
 
 html {
@@ -126,6 +127,7 @@ body {
   background-image: url(images/body.png);
   color: #FFF;
   box-shadow: #000 0 0 15px;
+  -webkit-box-shadow: #000 0 0 15px;
 }
 
 #header {
@@ -147,6 +149,7 @@ body {
   background: linear-gradient(top, #393939 0%, black 100%);
   /* W3C */
   box-shadow: inset #000 0 0 4px;
+  -webkit-box-shadow: inset #000 0 0 4px;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -171,6 +174,7 @@ h1 {
   background: linear-gradient(top, #d71e1e 1%, #5a0101 98%);
   /* W3C */
   box-shadow: inset #c22c27 0 0 10px,#000 5px 0 10px;
+  -webkit-box-shadow: inset #c22c27 0 0 10px,#000 5px 0 10px;
   float: left;
 }
 
@@ -204,6 +208,7 @@ h1 img {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   box-shadow: #636363 0 1px 1px, inset #000 0 2px 2px;
+  -webkit-box-shadow: #636363 0 1px 1px, inset #000 0 2px 2px;
   color: #FFF;
   line-height: 28px;
   text-decoration: none;
@@ -280,6 +285,7 @@ h1 img {
   background: linear-gradient(top, #222222 0%, black 100%);
   /* W3C */
   box-shadow: inset #000 0 3px 3px;
+  -weblkit-box-shadow: inset #000 0 3px 3px;
 }
 
 #body {
@@ -310,6 +316,7 @@ h1 img {
   /* W3C */
   padding: 12px;
   box-shadow: #636363 0 1px 1px, inset #000 0 3px 3px;
+  -webkit-box-shadow: #636363 0 1px 1px, inset #000 0 3px 3px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -366,6 +373,7 @@ h1 img {
   background-image: url(images/body.png);
   padding: 10px;
   box-shadow: #636363 0 1px 0px, inset #000 2px 0 2px;
+  -webkit-box-shadow: #636363 0 1px 0px, inset #000 2px 0 2px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -421,6 +429,7 @@ h1 img {
   list-style-type: none;
   background-color: #111;
   box-shadow: inset #000 0 2px 5px;
+  -webkit-box-shadow: inset #000 0 2px 5px;
   margin-top: 0;
   margin-right: 10px;
   margin-bottom: 15px;
@@ -496,6 +505,7 @@ h1 img {
   background: linear-gradient(top, #3f3f3f 0%, #303030 100%);
   /* W3C */
   box-shadow: #000 0 1px 5px;
+  -webkit-box-shadow: #000 0 1px 5px;
 }
 
 #aside .nav li a:hover,
@@ -517,6 +527,7 @@ h1 img {
   background: linear-gradient(top, #5b5b5b 0%, #424242 100%);
   /* W3C */
   box-shadow: inset #000 0 1px 5px;
+  -webkit-box-shadow: inset #000 0 1px 5px;
 }
 
 #bread_crumb {
@@ -571,6 +582,7 @@ h1 img {
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   box-shadow: #636363 0 1px 1px, inset #000 0 2px 2px;
+  -webkit-box-shadow: #636363 0 1px 1px, inset #000 0 2px 2px;
   color: #FFF;
   font-size: 13px;
 }

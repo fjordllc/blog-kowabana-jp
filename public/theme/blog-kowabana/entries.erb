@@ -1,0 +1,22 @@
+<% unless index? %>
+<h2 class="page_title"><%= @title %></h2>
+<% end %>
+<div class="section articles">
+<% @posts.each do |post| %>
+  <div class="section article">
+      <h2><a href="<%= post.link %>"><%= post.title %></a></h2>
+        <p class="date"><%= l post.created_at.to_time %></p>
+    <div class="body">
+      <%= post.body %>
+    </div>
+    <div class="footer">
+      <% if logged_in? %>
+      <p><a href="<%= post.edit_link %>"><%= t.edit %></a></p>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+  <div class="pager clearfix">
+<%= @posts.pager.to_html(request.url) %>
+  </div>
+</div>

@@ -364,6 +364,18 @@ h1 img {
   color: #ccc;
 }
 
+#body .article ul {
+  margin-bottom: 1em;
+}
+
+#body .article ul li {
+  font-size: 93%;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: #ccc;  
+  list-style: disc;
+}
+
 #body .article p:last-child {
   margin-bottom: 0;
 }

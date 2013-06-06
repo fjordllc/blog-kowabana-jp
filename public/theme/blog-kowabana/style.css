@@ -364,8 +364,35 @@ h1 img {
   color: #ccc;
 }
 
+#body .article ul {
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+#body .article ul li {
+  font-size: 93%;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: #ccc;  
+  list-style: disc;
+}
+
 #body .article p:last-child {
   margin-bottom: 0;
+}
+
+#body .article blockquote {
+  display: block;
+  background: #2b2d2e;
+  padding: 15px;
+  margin: 1.4em 20px;
+  border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;-o-border-radius: 4px;
+  box-shadow: inset #000 0 1px 3px, #444 0 1px 1px;
+  color: #fff;
+}
+
+#body .article blockquote p {
+  margin-bottom: 1.4em;
 }
 
 #body .article .attention {
@@ -410,6 +437,17 @@ h1 img {
   padding-left: 20px;
   font-size: 115%;
   line-height: 1.5;
+}
+#body .article h4 {
+  display: block;
+  padding-bottom: 1em;
+  font-size: 100%;
+  line-height: 1.5;
+}
+#body .article h4:before {
+  content: "■";
+  margin: 0 3px 0 0;
+  color: #a10b0b;
 }
 
 #aside h2 {

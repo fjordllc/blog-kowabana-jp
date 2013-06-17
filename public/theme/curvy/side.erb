@@ -1,7 +1,7 @@
 <% if about = Snippet("about") %>
 <div id="profile" class="side_cont_wrapper first_side_cont_wrapper">
 	<h3 class="side_cont_title">
-	  <%= t.profile %>
+	  <%= t('profile') %>
 	</h3>
 	<div class="side_cont_body">
 		<%= about.body %>
@@ -11,29 +11,28 @@
 
 <div id="recent_entry" class="side_cont_wrapper">
 	<h3 class="side_cont_title">
-	  <%= t.recent_entries %>
+	  <%= t('recent_entries') %>
 	</h3>
 	<div class="side_cont_body">
 		<ul id="side_list">
 			<% Post.recent.each do |post| %>
 				<li>
-					<span>&middot;</span><%= link_to post.title, post.link %>
+					<span>&middot;</span><%= link_to post.title, url(post.link) %>
 				</li>				
 			<% end %>
 		</ul>
 	</div>
 </div>
 
-
 <div id="recent_comment" class="side_cont_wrapper">
 	<h3 class="side_cont_title">
-	  <%= t.recent_comments %>
+	  <%= t('recent_comments') %>
 	</h3>
 	<div class="side_cont_body">
 		<ul id="side_list">
 			<% Comment.recent.each do |comment| %>
 				<li>
-					<span>&middot;</span><%= link_to truncate(strip_tags(comment.body), :length => 16), comment.link %>
+					<span>&middot;</span><%= link_to truncate(strip_tags(comment.body), :length => 16), url(comment.link) %>
 				</li>				
 			<% end %>
 		</ul>
@@ -43,13 +42,13 @@
 
 <div id="recent_tag" class="side_cont_wrapper">
 	<h3 class="side_cont_title">
-	  <%= t.tags %>
+	  <%= t('tags') %>
 	</h3>
 	<div class="side_cont_body">
 		<ul id="side_list">
 			<% Tag.all.each do |tag| %>
 				<li>
-					<span>&middot;</span><%= link_to tag.name, tag.link %>
+					<span>&middot;</span><%= link_to tag.name, url(tag.link) %>
 				</li>				
 			<% end %>
 		</ul>
@@ -59,14 +58,14 @@
 
 <div id="archives" class="side_cont_wrapper">
 	<h3 class="side_cont_title">
-	  <%= t.archives %>
+	  <%= t('archives') %>
 	</h3>
 	<div class="side_cont_body">
 		<ul id="side_list">
 			<% months.each do |m| %>
 				<li>
 					<span>&middot;</span>
-					<%= link_to "#{m.year}年#{m.month}月", "/#{m.year}/#{m.month}/" %>
+					<%= link_to "#{m.year}年#{m.month}月", url("/#{m.year}/#{m.month}/") %>
 				</li>				
 			<% end %>
 		</ul>
@@ -75,10 +74,10 @@
 
 <div id="search" class="side_cont_wrapper last_side_cont_wrapper">
 	<h3 class="side_cont_title">
-	  <%= t.search %>
+	  <%= t('search') %>
 	</h3>
 	<div class="side_cont_body">
-		<form action="/search/" method="get" id="">
+		<form action="<%= url('/search/') %>" method="get" id="">
 			<input type="text" name="query" class="search_field">
 		</form>
 	</div>
